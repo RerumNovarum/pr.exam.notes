@@ -1,0 +1,14 @@
+# Теория вероятностей #
+
+
+Конспект к экзамену
+
+\newcommand{\SigmaField}{\mathcal F}
+\newcommand{\BorelField}{\mathcal B}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\KK}{\mathbb K}
+\newcommand{\Expectation}{\mathbb E}
+\newcommand{\E}{\Expectation}
+\newcommand{\Probability}{\mathbb P}
+\newcommand{\pr}{\Probability}
