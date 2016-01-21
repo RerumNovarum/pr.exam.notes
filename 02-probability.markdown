@@ -84,3 +84,8 @@ $$ \sum_{j\in J} \phi A_{j} = \phi \sum_{j\in J} A_{j} $$
     2. $A \cup (B-A) = A + (B-A)$
     3. $\mu A\cup (B-A) = \mu A + \mu (B-A)$, то есть:
     5. $\mu (B-A) = \mu A - \mu B$
+
+Если же данная мера --- *вероятность* $\pr$, то
+
+1.  $\pr A = 1 - \pr A^\complement$
+    * $1 = \pr \Omega = \pr A + \pr A^\complement$
