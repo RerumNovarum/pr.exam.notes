@@ -8,5 +8,6 @@
 основанных на сторонних источниках информации.
 
 * [Список вопросов](questions.djvu)
+* [Лекции](vsu.lectures.2.djvu)
 * [Лекции](vsu.lectures.djvu)
 * [Конспект](pr.notes.pdf)
