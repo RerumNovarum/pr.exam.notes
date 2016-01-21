@@ -68,11 +68,11 @@ $(\Omega_1, \SigmaField_1, \pr_1), \ldots (\Omega_n, \SigmaField_n, \pr_n)$.
 Возвращаясь к нашему частному случаю,
 
 0. 
-    1. $\Omega_i = \{0,1\}$
-    2. $\SigmaField_i=\{ \{0\}, \{1\}, \emptyset, \Omega_i \}$
+    1. $\Omega_j = \{0,1\}$
+    2. $\SigmaField_j=\{ \{0\}, \{1\}, \emptyset, \Omega_j \}$
     3. $\pr\{1\} = p$
     4. $\pr\{0\} = 1-p$
-1. $\Omega = \{ \omega=(a_1,\ldots,a_n): a_i\in\Omega_i, i=\overline{1,n} \}$
+1. $\Omega = \{ \omega=(a_1,\ldots,a_n): a_i\in\Omega_j, j=\overline{1,n} \}$
 2. $\SigmaField = \{ A = A_1\times A_2\times \ldots\times A_n : A_j\in\SigmaField_j \}$
 3. $p_\omega = p_1(a_1) p_2(a_2) \ldots p_n(a_n)$
 4. $\pr A = \sum\limits_{a_j\in\SigmaField_j, j=\overline{1,n}} p_1(a_1)\ldots p_n(a_n)$
