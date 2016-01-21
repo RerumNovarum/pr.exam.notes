@@ -8,6 +8,7 @@ $\forall B \quad B = \sum_j B A_j$, а потому
 $\forall B \quad \pr B = \sum_j \pr B A_j$.
 Но $\pr B A_j = \frac{\pr B A_j}{\pr A_j} \pr A_j = \pr A_j \pr_{A_j} B$.
 $$ \pr B = \sum_j \pr_{A_j} B \pr A_j $$
+
 ### Формула Байеса ###
 Пусть даны два события $A, B$, такие что $\pr A, \pr B > 0$.
 Тогда, как установлено выше:
@@ -26,3 +27,9 @@ $$ \pr B = \sum_j \pr_{A_j} B \pr A_j $$
 3. $\pr_B A_k = \frac{\pr A_k B}{\pr B} = \frac{\pr B \pr_{A_k} B}{\pr B} = \frac{\pr B \pr_{A_k} B}{\sum_j \pr A_j \pr_{A_j} B}$
 
 Это --- расширенная формула Байеса: $$\pr_B A_k = \frac{\pr B \pr_{A_k} B}{\sum_j \pr A_j \pr_{A_j} B}$$
+
+
+События $A_1, A_2, \ldots, A_n$, образующие разбиение $\Omega$
+называют *гипотезами*, вероятность $\pr A_i$ называют *априорной* вероятностью гипотезы,
+а условные вероятности $\pr_B A_i$ называют *апостериорными* вероятностями гипотез $A_i$
+при наступлении события $B$

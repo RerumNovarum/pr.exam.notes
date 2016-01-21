@@ -8,3 +8,4 @@
 \newcommand{\Probability}{\mathbb P}
 \newcommand{\pr}{\Probability}
 \newcommand{\PrSpace}{(\Omega, \SigmaField, \pr)}
+\newcommand{\Bern}{\mathrm{Bern}}
