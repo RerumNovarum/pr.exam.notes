@@ -15,7 +15,7 @@ $$ \pr B = \sum_j \pr_{A_j} B \pr A_j $$
 
 1. $\pr AB = \frac{\pr AB}{\pr B} \pr B = \pr B \pr_B A$
 2. $\pr AB = \frac{\pr AB}{\pr A} \pr A = \pr A \pr_A B$
-3. $\pr_B A \pr B = \pr A \pr_A B$
+3. $\pr B \pr_B A = \pr A \pr_A B$
 4. $\pr_B A = \frac{\pr A \pr_A B}{\pr B}$
 
 Последняя формула носит имя формулы Байеса: $$\pr_B A = \frac{\pr A \pr_A B}{\pr B}$$
