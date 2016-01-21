@@ -9,3 +9,8 @@
 \newcommand{\pr}{\Probability}
 \newcommand{\PrSpace}{(\Omega, \SigmaField, \pr)}
 \newcommand{\Bern}{\mathrm{Bern}}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\dx}{\dd x}
+\newcommand{\dmu}{\dd\mu}
+\newcommand{\dF}{\dd F}
+\newcommand{\const}{\mathtt{const}}
