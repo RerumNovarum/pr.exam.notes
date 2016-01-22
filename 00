@@ -1,5 +1,7 @@
 \newcommand{\SigmaField}{\mathcal F}
+\newcommand{\FF}{\SigmaField}
 \newcommand{\BorelField}{\mathcal B}
+\newcommand{\BB}{\BorelField}
 \newcommand{\RR}{\mathbb R}
 \newcommand{\CC}{\mathbb C}
 \newcommand{\KK}{\mathbb K}
