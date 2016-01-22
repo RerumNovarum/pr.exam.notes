@@ -13,6 +13,7 @@
 \newcommand{\pr}{\Probability}
 \newcommand{\PrSpace}{(\Omega, \SigmaField, \pr)}
 \newcommand{\Bern}{\mathrm{Bern}}
+\newcommand{\Gaussian}{\mathcal N}
 \newcommand{\dd}{\mathrm d}
 \newcommand{\dx}{\dd x}
 \newcommand{\dmu}{\dd\mu}
