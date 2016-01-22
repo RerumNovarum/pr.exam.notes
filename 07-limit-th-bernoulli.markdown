@@ -1,33 +1,41 @@
 ## 7. Предельные теоремы в схеме Бернулли ##
 
-Схема Бернулли:
-
-1. $\Omega_j = \{0,1\}$
-2. $\SigmaField_j=\{ \{0\}, \{1\}, \emptyset, \Omega_j \}$
-3. $\pr\{1\} = p$
-4. $\pr\{0\} = 1-p$
-5. $\Omega = \{ \omega=(a_1,\ldots,a_n): a_i\in\Omega_j, j=\overline{1,n} \}$
-6. $\SigmaField = \{ A = A_1\times A_2\times \ldots\times A_n : A_j\in\SigmaField_j \}$
-7. $p_\omega = p_1(a_1) p_2(a_2) \ldots p_n(a_n)$
-8. $\pr A = \sum\limits_{\{a_j\in\SigmaField_j, j=\overline{1,n}\}} p_1(a_1)\ldots p_n(a_n)$
-9. $\pr\{\omega\} = p^k (1-p)^{n-k}$
-10. Обозначим $q=1-p$
-11. Обозначим $P_n(m) = {n \choose m} p^m q^{n-m}$
-
-Заметим: $1 = (p+q)^n = \sum_{j=1}^n {n\choose k} p^m q^{n-m} = \sum_m P_n(m)$.
-
 
 Пусть дана последовательность серий испытаний Бернулли,
 в которой $n$-й эксперимент состоит в последовательном проведении $n$ испытаний Бернулли
 с вероятностью усреха $p_n$.
 
+${\Omega = \prod_{j=1}^n \Omega_j}$, $\Omega_j = \Omega_i$,
+
+$\SigmaField = S(\Omega)$,
+
+$A \subset \Omega_j$,
+
+$A_{n k} = A^\complement \times\ldots\times A^\complement \times A\times A^\complement \times\ldots\times A^\complement$,
+
+$X_{n k} = I_{A_{nk}}$ --- индикатор события $A$ в $i$-м испытании.
+
+$S_n = \sum_{j=1}^n X_k$ --- число появлений события $A$ в $n$-ной серии.
+
+$X_{n k}, k=\overline{1,n}$ --- попарно независимые.
+
+Заметим: $1 = (p_n+q_n)^n = \sum_{j=1}^n {n\choose k} p_n^m q_n^{n-m}$.
+
+$\E X_{n k} = p_n$, $\E X_{nk}^2 = p_n^2$, $\sigma^2 X_{nk} = p_n - p_n^2 = p_n q_n$.
+
+$\E S_n = \sum_{k=1}^n \E X_{nk} = np_n$, $\sigma^2 S_n = \sum_{k=1}^n \sigma^2 X_{nk} = n p_n q_n$.
+
+
 ### Th. (Пуассона-Бернулли) ###
 Если
 
-1. $\lim_{n\to\infty} p_n = 0$
-2. $\lim_{n\to\infty} np_n = \lambda > 0$
-
-То $$\lim_{n\to\infty} P_n (m) = e^{-\lambda} \frac{\lambda^m}{m!}$$
+$$
+\left\{\begin{aligned}
+ & \lim_{n\to\infty} & p_n  &=& 0 &\\
+ & \lim_{n\to\infty} & np_n &=& \lambda &> 0 \\
+\end{aligned}\right.
+$$
+То $$\lim_{n\to\infty} \pr [S_n = k] = \frac{\lambda^k}{k!} e^{-\lambda}, \quad k=\overline{1,n}$$
 
 TODO: proof
 
