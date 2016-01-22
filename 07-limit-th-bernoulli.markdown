@@ -40,3 +40,4 @@ TODO: proof
 3. Величина $x_m = \frac{m-np}{\sqrt {npq}}$ равномерно ограничена по $m$ и $n$
 
 То $$P_n(m) = \frac{1}{\sqrt{2\pi npq}}\exp(-\frac{x_m^2}{2})(1+\alpha_n(m))$$
+$$x \approx \frac{m-np_n}{npq}$$
