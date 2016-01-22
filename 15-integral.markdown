@@ -11,4 +11,4 @@ $\lambda(P) = \max\diam [a_j, a_{j-1}]$ --- параметр разбиения.
 Если существует конечный предел этих интегральных сумм по базе $\lambda(P)\to 0$, то он называется
 *Интегралом Стилтьеса функции $g$ по интегрирующей функцие $F$*.
 
-$$ \int_a^b g(t) \dd F(t) = \lim\limits_{\lambda(P)\to 0} \sigma(g, P, \xi)$$
+$$ \int_a^b g(t) \dd F(t) = \lim\limits_{\lambda(P)\to 0} \sigma(g, P, \xi) $$

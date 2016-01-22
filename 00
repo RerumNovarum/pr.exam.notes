@@ -19,3 +19,4 @@
 \newcommand{\dF}{\dd F}
 \newcommand{\const}{\mathtt{const}}
 \newcommand{\diam}{\mathrm{diam}}
+\newcommand{\cov}{\mathrm{cov}}
