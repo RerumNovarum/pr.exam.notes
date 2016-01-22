@@ -5,6 +5,8 @@
 \newcommand{\KK}{\mathbb K}
 \newcommand{\Expectation}{\mathbb E}
 \newcommand{\E}{\Expectation}
+\newcommand{\variation}{\mathbb D}
+\newcommand{\D}{\variation}
 \newcommand{\Probability}{\mathbb P}
 \newcommand{\pr}{\Probability}
 \newcommand{\PrSpace}{(\Omega, \SigmaField, \pr)}
