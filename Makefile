@@ -7,3 +7,6 @@ pr.notes.pdf: *.markdown
 
 cheatsheet.pdf: pr.terminology.table.tex
 	$(PANDOC) -o cheatsheet.pdf 00 pr.terminology.table.tex
+
+%.pdf: %.markdown
+	$(PANDOC) -o %.pdf 00 %.markdown
