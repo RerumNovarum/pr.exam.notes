@@ -1,12 +1,12 @@
 PANDOC=pandoc --latex-engine=xelatex -V mainfont='CMU Serif' -V geometry:margin=2cm -sS
 
-all: pr.notes.pdf cheatsheet.pdf
+all: pr.questions.pdf cheatsheet.pdf
 
-pr.notes.pdf: *.markdown 
-	$(PANDOC) -o pr.notes.pdf 00 *.markdown
+pr.questions.pdf: 00 questions/*.markdown 
+	$(PANDOC) -o pr.questions.pdf 00 questions/*.markdown
 
-cheatsheet.pdf: pr.terminology.table.tex
+cheatsheet.pdf: 00 pr.terminology.table.tex
 	$(PANDOC) -o cheatsheet.pdf 00 pr.terminology.table.tex
 
-%.pdf: %.markdown
-	$(PANDOC) -o %.pdf 00 %.markdown
+%.pdf: 00 %.markdown
+	$(PANDOC) -o $*.pdf 00 $*.markdown
