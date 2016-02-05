@@ -71,5 +71,6 @@ $Y = (Y_1, \ldots, Y_k), \quad Y_j = \Psi_j(X)$ --- случайная вели�
         f_{Y^\star} (y) \dd y_{k+1} \ldots \dd y_{n} = \\
       & &&= \idotsint_{-\infty}^{+\infty}
           f_X(\Psi_1^{-1}(y_1,\ldots,y_k), \ldots, \Psi_k^{-1}(y_1,\ldots,y_k), y_{k+1}, \ldots, y_{n})
-          \dd y_{k+1} \ldots \dd_{n}
+          |J(y)|
+          \dd y_{k+1} \ldots \dd y_{n}
     \end{aligned}$$
