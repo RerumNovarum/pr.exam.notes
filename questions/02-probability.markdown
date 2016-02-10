@@ -32,7 +32,7 @@ $$ \sum_{j\in J} \phi A_{j} = \phi \sum_{j\in J} A_{j} $$
 Если мера $\pr$ такова, что $\pr\Omega = 1$, то она называется *нормированной* мерой, или *вероятностью*.
 То есть $pr$ --- вероятность, если:
 
-1.  $\pr A : \SigmaField\mapsto [0,1]$  (неотрицательность)
+1.  $\pr  : \SigmaField\mapsto [0,1]$  (неотрицательность)
 2.  $\pr A = 1$                         (нормированность)
 2.  $\sum_j \pr A_j = \pr \sum_j A_j$   ($\sigma$-аддитивность)
 
@@ -61,31 +61,45 @@ $$ \sum_{j\in J} \phi A_{j} = \phi \sum_{j\in J} A_{j} $$
   так как мера $\sigma$-аддитивна, а по условию ещё и конечна
 * $\mu A\cup B = \mu A + \mu B - \mu AB$
   так как в виду аддитивности и очевидных разбиений множеств $A$ и $A\cup B$
-    1. $\mu A       = \mu AB +  \mu A B^\complement$
-    2. $\mu A\cup B = \mu B  +  \mu A B^\complement$
-    3. $\mu A - \mu A\cup B = \mu AB - \mu B$
-    4. $\mu A + \mu B - \mu AB = \mu A\cup B$
+    $$\begin{aligned}
+      & \mu A       = \mu AB +  \mu A B^\complement \\
+      & \mu A\cup B = \mu B  +  \mu A B^\complement \\
+      & \mu A - \mu A\cup B = \mu AB - \mu B \\
+      & \mu A + \mu B - \mu AB = \mu A\cup B
+    \end{aligned}$$
 * $A_{1}\subset A_{2} \subset\ldots \implies \mu A_{1} \leq \mu A_{2} \leq \ldots$ (монотонность)
-    1. $A_2 = A_1 + A_2 A_1^\complement$
-    2. $\mu A_2 = \mu A_1 + \mu A_2 A_1^\complement$
-    3. $\mu \geq 0$
-    4. $\mu A_2 \geq \mu A_1$
-    5. $A_n = A_1 + A_2 A_1^\complement + A_3 A_2^\complement A_1^\complement + \ldots$
-    6. Далее по индукции
+    $$\begin{aligned}
+      & A_2     &&= A_1 + A_2 A_1^\complement \\
+      & \mu A_2 &&= \mu A_1 + \mu A_2 A_1^\complement \\
+      & \mu     &&\geq 0 \\
+      & \mu A_2 &&\geq \mu A_1 \\
+      & A_n     &&= A_1 + A_2 A_1^\complement + A_3 A_2^\complement A_1^\complement + \ldots \\
+      & Далее по индукции
+    \end{aligned}$$
 * $\mu \cup A_j \leq \sum \mu A_j$ (суб-аддитивность)
-    1. $\cup_{j=1}^\infty A_j = A_1 + A_2 A_1^\complement + \ldots$
-    2.  1. $A_2 A_1^\complement \subset A_2$
-        2. $A_3 A_2^\complement A_1^\complement \subset A_3$
-        3. \ldots
-    3.  1. $\mu A_2 \leq \mu (A_2 A_1^\complement)$
-        2. $\mu A_n \leq \mu (A_{n-1} A_{n-2} \ldots A_1)$
+    $$\begin{aligned}
+      & \cup_{j=1}^\infty A_j = A_1 + A_2 A_1^\complement + \ldots \\
+      & \begin{aligned}
+        & A_2 A_1^\complement \subset A_2 \\
+        & A_3 A_2^\complement A_1^\complement \subset A_3\\
+        & \ldots
+        \end{aligned} \\
+      & \begin{aligned}
+          & \mu A_2 \leq \mu (A_2 A_1^\complement) \\
+          & \mu A_n \leq \mu (A_{n-1} A_{n-2} \ldots A_1)
+        \end{aligned}
+      \end{aligned}$$
 * $A \subset B \implies \mu (B - A) = \mu B - \mu A$
-    1. $A (B-A) = \emptyset$, т.е. $A$ и $B-A$ не пересекаются, а значит имеет место аддитивность:
-    2. $A \cup (B-A) = A + (B-A)$
-    3. $\mu A\cup (B-A) = \mu A + \mu (B-A)$, то есть:
-    5. $\mu (B-A) = \mu A - \mu B$
+     
+     $A (B-A) = \emptyset$, т.е. $A$ и $B-A$ не пересекаются, а значит имеет место аддитивность:
+     $$\begin{aligned}
+       & A \cup (B-A) = A + (B-A) \\
+       & \mu A\cup (B-A) = \mu A + \mu (B-A) \\
+       & \mu (B-A) = \mu A - \mu B
+     \end{aligned}$$
 
 Если же данная мера --- *вероятность* $\pr$, то
 
 1.  $\pr A = 1 - \pr A^\complement$
-    * $1 = \pr \Omega = \pr A + \pr A^\complement$
+    
+    $1 = \pr \Omega = \pr A + \pr A^\complement$

@@ -9,9 +9,12 @@ $\sigma$-алгеброй пространства $\Omega$, называетс�
 такой что
 
 1.  для любого не более чем счётного числа множеств $A_{j}\in\SigmaField$ имеет место
-    1. $\bigcup_{j\in J} A_{j} \in \SigmaField$
-    2. $\bigcap_{j\in J} A_{j} \in \SigmaField$
+    $$\begin{aligned}
+    & \bigcup_{j\in J} A_{j} \in \SigmaField \\
+    & \bigcap_{j\in J} A_{j} \in \SigmaField
+    \end{aligned}$$
 2.  $\forall A\in\SigmaField$\quad
+    
     $A^\complement \in \SigmaField$
 
 #### Следствия из определения ####

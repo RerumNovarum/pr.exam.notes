@@ -15,16 +15,19 @@ $g_X(u) = \int_{-\infty}^{+\infty} e^{iux} f_X (u) \dd x$, где $f_X$ --- пл
 
 ### Свойства ###
 
-1. $|g_X (t)| \leq 1$
-2. $g_X(0) = 1$
-   1. $g_X(t) = \E e^{iu X}$
-   2. $g_X(0) = \E e^0 = 1$
-3. $g_X(-t) = \overline{g_X(t)}$
-4. Если $Y = a+bX$, то
-   $g_Y = e^{iub} g_X(au)$
-5. Если $X_1, \ldots, X_n$ --- независимые,
-   $Y = \sum_j X_j$, то
-   $$g_Y(t) = \prod\limits_{j=1}^n g_{X_j}(t)$$
-   Действительно:
-   $$g_Y(t) = \E e^{iYt} = \E e^{\sum_j i X_j t} = \E \prod_{j=1}^n e^{i X_j t} = \prod_{j=1}^n \E e^{i X_j t} = \prod_{j=1}^n g_{X_j}(t)$$
+1.  $|g_X (t)| \leq 1$
+2.  $g_X(0) = 1$
+    1. $g_X(t) = \E e^{iu X}$
+    2. $g_X(0) = \E e^0 = 1$
+3.  $g_X(-t) = \overline{g_X(t)}$
+4.  Если $Y = a+bX$, то
+    $g_Y = e^{iub} g_X(au)$
+5.  Если $X_1, \ldots, X_n$ --- независимые,
+    $Y = \sum_j X_j$, то
+
+    $g_Y(t) = \prod\limits_{j=1}^n g_{X_j}(t)$
+     
+    Действительно:
+
+    $g_Y(t) = \E e^{iYt} = \E e^{\sum_j i X_j t} = \E \prod_{j=1}^n e^{i X_j t} = \prod_{j=1}^n \E e^{i X_j t} = \prod_{j=1}^n g_{X_j}(t)$
 

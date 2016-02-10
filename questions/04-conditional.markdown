@@ -13,11 +13,11 @@
 
 ### Свойства ###
 
-1. $\pr_A A = 1$
-2. $\pr_A \emptyset = 0$
-3. $\pr_A \sum_j B_j = \frac{\sum_j \pr B_j}{\pr A} = \sum_j \frac{\pr B_j}{\pr A} = \sum_j \pr_A B_j$
-4. $\pr_A \geq 0$
-5. $\pr_A B \leq \pr_A A = 1, \forall B$, \quad так как $\forall B \quad AB\subset A$
+* $\pr_A A = 1$
+* $\pr_A \emptyset = 0$
+* $\pr_A \sum_j B_j = \frac{\sum_j \pr B_j}{\pr A} = \sum_j \frac{\pr B_j}{\pr A} = \sum_j \pr_A B_j$
+* $\pr_A \geq 0$
+* $\pr_A B \leq \pr_A A = 1, \forall B$, \quad так как $\forall B \quad AB\subset A$
 
 Отсюда следует
 
@@ -33,8 +33,10 @@
 ### Теорема о умножении ###
 $$ \pr AB = \pr_A B \pr A  = \pr_B A \pr B$$
 
-1. $\pr AB = \frac{\pr AB}{\pr A} \pr A = \pr_A B \pr A$
-2. $\pr AB = \frac{\pr AB}{\pr B} \pr B = \pr_B A \pr B$
+$$\begin{aligned}
+& \pr AB = \frac{\pr AB}{\pr A} \pr A = \pr_A B \pr A \\
+& \pr AB = \frac{\pr AB}{\pr B} \pr B = \pr_B A \pr B
+\end{aligned}$$
 
 
 ### Def. (Независимые события) ###
@@ -55,8 +57,10 @@ $\pr AB = \pr A \pr B$
 1. $\pr_B A = \frac{\pr AB}{\pr B} = \pr A$
 2. $A^\complement, B$ --- независимы
 3. $A, B^\complement$ --- независимы
-    * $A = AB + AB^\complement$
-    * $\pr AB^\complement = \pr A - \pr AB = \pr A - \pr A \pr B = \pr A (1 - \pr B) = \pr A \pr B^\complement$
+    $$\begin{aligned}
+    & A = AB + AB^\complement \\
+    & \pr AB^\complement = \pr A - \pr AB = \pr A - \pr A \pr B = \pr A (1 - \pr B) = \pr A \pr B^\complement
+    \end{aligned}$$
 4. $A^\complement, B^\complement$ --- независимы
 5.  Если
       1. $A, B_1$ --- независимы
